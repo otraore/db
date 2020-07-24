@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DBT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato');
+
+        body {
+            background-color: #edf0f5;
+            overflow-x: hidden;
+        }
+
+        .app {
+            padding: 0 20px;
+        }
+
+        .vertical-center {
+            min-height: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .dbt-container {
+            height: auto;
+            min-height: 480px;
+            background-color: white;
+            vertical-align: center;
+            border-radius: 15px;
+            box-shadow: -0.959px 10.958px 70px 0px rgba(4, 40, 75, 0.1);
+        }
+
+        .dbt-header {
+            text-align: center;
+            padding-top: 10%;
+            font-size: 2em;
+            color: #213d63;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+        }
+
+        .file-directory {
+            padding: 50px 15% 0px;
+        }
+
+        .delete-button {
+            text-align: center;
+            width: 100%;
+        }
+
+        .btn-primary {
+            background-color: #ea295b;
+            border: none;
+            width: 45%;
+            margin-top: 4%;
+            margin-bottom: 8%;
+            padding: 2% 0%;
+            border-radius: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #f65982;
+        }
+
+        .times {
+            padding: 20px 15%;
+            float: none;
+            vertical-align: bottom
+        }
+
+        .files-deleted {
+            height: auto;
+            background-color: white;
+        }
+
+        .file-list {
+            margin-top: 20px;
+            border-style: none;
+            max-height: 300px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-left: 10px;
+            color: #8094b1;
+        }
+
+        .form-group label {
+            font-family: 'Lato', sans-serif;
+            color: #8094b1;
+        }
+
+        .list-group-item {
+            border-style: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="app row vertical-center">
+        <div class="col-md-8">
+            <div class="dbt-container">
+                <div class="dbt-header">Delete Files</div>
+                <div class="file-directory">
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Select Folder</label>
+                        <input type="file" class="form-control-file" webkitdirectory multiple id="exampleFormControlFile1">
+                    </div>
+                </div>
+                <div class="times">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usr">Date/Time Start</label>
+                                <input type="datetime-local" class="form-control" id="time_start">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="usr">Date/Time End</label>
+                                <input type="datetime-local" class="form-control" id="time_end">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="delete-button">
+                            <button type="button" class="btn btn-primary">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="dbt-container">
+                <div class="dbt-header">Files to be Deleted</div>
+                <div class="file-list pre-scrollable">
+                    <li class="list-group-item">File-one.jpg</li>
+                    <li class="list-group-item">File-one.jpg</li>
+                    <li class="list-group-item">File-one.jpg</li>
+                    <li class="list-group-item">File-one.jpg</li>
+                    <li class="list-group-item">File-one.jpg</li>
+                    <li class="list-group-item">File-one.jpg</li>
+                    <li class="list-group-item">File-one.jpg</li>
+                    <li class="list-group-item">File-one.jpg</li>
+                    <li class="list-group-item">File-one.jpg</li>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
+
+</html>
